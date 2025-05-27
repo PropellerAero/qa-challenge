@@ -40,3 +40,4 @@ Here’s what we’ll focus on validating:
 ## Setup
 
 `yarn install`
+`yarn playwright install`
