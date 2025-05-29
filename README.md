@@ -18,10 +18,10 @@ Zoom in and you can see your house. [This blog post](https://macwright.org/2012/
 
 ## Setup
 
-`yarn install`
-`yarn playwright install`
-`yarn test`
-`yarn test:e2e`
+- `yarn install`
+- `yarn playwright install`
+- `yarn test`
+- `yarn test:e2e`
 
 ## The Challenge
 
