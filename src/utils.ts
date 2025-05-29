@@ -5,9 +5,9 @@ export const extractTileCoordinate = (url: string): TileDescriptor => {
   const a = url.split("mc/");
   const b = a[1].split("/");
 
-  const y = b[0];
+  const z = b[0];
   const x = b[1];
-  const z = b[2];
+  const y = b[2];
 
   return [x, y, z];
 };
