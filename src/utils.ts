@@ -1,14 +1,15 @@
 import { TileDescriptor, TileSet } from "./types";
 
+// e.g url https://maps.hereapi.com/v3/base/mc/11/1885/1226/png
 export const extractTileCoordinate = (url: string): TileDescriptor => {
-  const a = url.split("@");
-  const b = a[0].split("/");
+  const a = url.split("mc/");
+  const b = a[1].split("/");
 
-  const y = b[b.length - 1];
-  const x = b[b.length - 2];
-  const z = b[b.length - 3];
+  const y = b[0];
+  const x = b[1];
+  const z = b[2];
 
-  return [z, x, y];
+  return [x, y, z];
 };
 
 export const compareTileSets = (

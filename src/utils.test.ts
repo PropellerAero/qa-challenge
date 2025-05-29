@@ -1,4 +1,4 @@
-import { TileDescriptor, TileSet } from "./types";
+import { TileSet } from "./types";
 import { compareTileSets } from "./utils";
 
 describe("utils", () => {
